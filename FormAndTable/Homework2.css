@@ -1,0 +1,18 @@
+/* table, td, th{
+    width: 40rem;
+    padding: 10px;
+    margin: 0rem auto;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+tbody tr th{
+    background-color: rgb(243, 160, 160);
+}
+tr td:first-child, td:nth-child(2){
+    background-color: rgb(162, 240, 162);
+}
+tr td:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6), .x{
+}
+tfoot th{
+    text-align: start;
+} */

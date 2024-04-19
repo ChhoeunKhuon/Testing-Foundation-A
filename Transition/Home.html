@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        width: 300px;
+        margin: 5rem auto;
+    }
+    button{
+        background-image: url(flower.png);
+        color: white;
+        padding: 11rem;
+        border: none;
+        border-radius: 50%;
+        transform: translate(1.2);
+        animation: autoRound 0.8s infinite ease-in-out;
+        box-shadow: 0 0 15px rgb(255, 24, 3);
+    }
+    @keyframes autoRound{
+        0%{
+            transform: rotate(0);
+        }
+        10%{
+            transform: rotate(50deg);
+            box-shadow: 0 0 15px rgb(255, 158, 3);
+        }
+        20%{
+            transform: rotate(100deg);
+            box-shadow: 0 0 15px rgb(137, 255, 3);
+        }
+        30%{
+            transform: rotate(150deg);
+            box-shadow: 0 0 15px rgb(3, 255, 255);
+        }
+        40%{
+            transform: rotate(200deg);
+            box-shadow: 0 0 15px rgb(28, 3, 255);
+        }
+        60%{
+            transform: rotate(230deg);
+            box-shadow: 0 0 15px rgb(196, 3, 255);
+        }
+        80%{
+            transform: rotate(260deg);
+            box-shadow: 0 0 15px rgb(255, 3, 121);
+        }
+        90%{
+            transform: rotate(280deg);
+            box-shadow: 0 0 15px rgb(255, 3, 87);
+        }
+        100%{
+            transform: rotate(300deg);
+            box-shadow: 0 0 15px rgb(3, 255, 70);
+        }
+    }
+    button:hover{
+        transform: scale(1.2);
+        background-color: greenyellow;
+    }
+    body:hover{
+        background-color: blue;
+    }
+</style>
+<body>
+    <button></button>
+</body>
+</html>

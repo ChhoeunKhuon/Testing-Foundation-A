@@ -1,0 +1,138 @@
+/* Nav Bar  */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(254, 250, 242);
+}
+:root{
+    --primary-color: white;
+}
+.first-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: blue;
+    padding: 10px;
+}
+.first-nav ul li{
+    list-style: none;
+}
+.first-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.first-nav ul li a:hover{
+    color: rgb(185, 184, 184);
+}
+/* topText */
+.top-text{
+    text-align: center;
+    & h1{
+        font-size: 25px;
+        padding: 20px;
+        color: blue;
+        font-family: "Lilita One", sans-serif;
+    }
+}
+/* Second Nav  */
+.second-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(214, 214, 247);
+    padding: 10px;
+    width: 80%;
+    margin: 2rem auto;
+    border-radius: 6px;
+}
+.second-nav ul li{
+    list-style: none;
+}
+.second-nav ul li a{
+    text-decoration: none;
+    color: blue;
+    &:hover{
+        color: rgb(91, 91, 254);
+    }
+}
+/* flex box  */
+img{
+    width: 270px;
+    border-radius: 6px 6px 0 0;
+}
+@keyframes animation{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.flex{
+    width: 270px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25);
+    animation: animation;
+    animation-duration: 3s;
+}
+.flex-item{
+    width: 250px;
+    padding: 10px;
+    border-radius: 0 0 6px 6px;
+    & div{
+        padding: 5px;
+    }
+}
+.flex-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1000px;
+    gap: 2rem;
+    margin: 0rem auto;
+}
+.space-item{
+    display: flex;
+    justify-content: space-around;
+    border: 1px soild red;
+    & small{
+        background-color: rgb(245, 187, 245);
+        padding: 5px;
+        border-radius: 6px;
+    }
+}
+span{
+    font-size: 11px;
+    font-weight: 1;
+    color: black;
+}
+i{
+    color: orange;
+}
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+hr{
+    border-top: 1px solid red;
+}
+/* footer  */
+footer p{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-top: 1rem;
+    font-family: "Pacifico", cursive;
+}
+@media(max-width:920px){
+    .flex-box{
+        margin: 0rem auto;
+        max-width: 300px;
+    }
+}

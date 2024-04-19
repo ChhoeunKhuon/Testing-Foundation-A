@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        background-image: 
+        linear-gradient(to bottom, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 55%),
+        linear-gradient(to right, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 53%);
+        background-size: 1px 15px, 15px 1px;
+        background-color: black;
+        border: 1px solid black;
+    }
+    header p, h1{
+        color: white;
+    }
+    header section{
+        padding: 50px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        background-color: rgba(253, 252, 252, 0.50);
+    }
+    nav ul li{
+        list-style: none;
+        padding: 10px
+    }
+    nav ul li:hover{
+        background-color: rgb(77, 77, 76);
+        transform: scale(1.1);
+        border: none;
+        border-radius: 6px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: yellow;
+    }
+    h1{
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 25px;
+        margin-top: 1rem;
+        padding: 20px;
+    }
+    div:first-child{
+        background-image: 
+        linear-gradient(to bottom, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 55%),
+        linear-gradient(to right, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 53%);
+        background-size: 1px 15px, 15px 1px;
+        background-color: rgb(17, 140, 74);
+        grid-column: 1/ span 3;
+        color: white;
+    }
+    div:nth-child(3){
+        grid-column: 1/ span 4;
+        background-color: blueviolet;
+        position: relative;
+    }
+    div:nth-child(4){
+        grid-column: 1/ span 2;
+    }
+    div:nth-child(5){
+        grid-column: 3/ span 2;
+    }
+    div:nth-child(6){
+        grid-column: 1/ span 3;
+    }
+    div:nth-child(8){
+        grid-column: 1 / span 2;
+    }
+    div:last-child{
+        grid-column: 1/ span 4;
+    }
+    div{
+        border-radius: 6px;
+        background-color: rgb(190, 177, 243);
+        color: white;
+        padding: 20px;
+        border: 1px solid black;
+        animation: appear;
+        animation-duration: 10s;
+    }
+    @keyframes appear{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+    @media screen and (max-width:600px ){
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    footer{
+        margin-top: 5rem;
+        background-image: 
+        linear-gradient(to bottom, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 55%),
+        linear-gradient(to right, transparent 50%, rgb(91, 90, 90) 50%, rgb(91, 90, 90) 53%, transparent 53%);
+        background-size: 1px 15px, 15px 1px;
+        background-color: black;
+        padding: 20px;
+        border: 1px solid black;
+    }
+    footer li, p{
+        color: white;
+    }   
+    footer section{
+        padding: 30px;
+        background-color: rgba(207, 205, 205, 0.5);
+        border: none;
+        border-radius: 6px;
+    }
+    .new{
+        color: whitesmoke;
+        padding: 5px 10px;
+        border-radius: 2px;
+        position: absolute;
+        top: -8px;
+        left: -15px;
+        transform: rotate(-30deg);
+        background-color: green;
+        animation: animation 2s infinite;
+    }
+    @keyframes animation {
+    50% {box-shadow: 0 0 15px red;}
+    }
+</style>
+<body>
+    <header><br><br>
+        <section>
+            <h1>Grid by Examaple</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Start Here</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Patterns</a></li>
+                <li><a href="#">Vidoe Tutorial</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Css Grid Layout</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quidem repudiandae quas non, odio aperiam architecto consequuntur deleniti fugit, earum dicta obcaecati sint id reprehenderit illo velit odit. Illo, dicta.</p>
+        </div>
+        <div>
+            <h3>The Video Tutorial</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id </p>
+        </div>
+        <div>
+            <section class="new">
+                <p>New!</p>
+            </section>
+            <h3>Get Started Guide</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>The Examples</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>
+                Patterns
+            </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>Resources</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>Css Layout News</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>Questions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div><h3>About Css Grid</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>News </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+        <div>
+            <h3>GridBugs</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius autem nemo id</p>
+        </div>
+    </main>
+    <footer>
+        <section>
+        <p>This is a project by Rachel Andrew. Take a look at some of the other things I make.</p>
+        <ul>
+            <li>Perch CMS - the original Really Little CMS. Designed for speed and simple implementation.</li>
+            <li>Notist - slide sharing and much more. Create your public speaking portfolio.</li>
+            <li>The CSS Workshop - learn CSS Layout with me</li>
+
+        </ul>
+        <br>
+        <p>This site is hosted on Netlify, thanks to their free hosting for open source projects.</p>
+    </section>
+    </footer>
+</body>
+</html>

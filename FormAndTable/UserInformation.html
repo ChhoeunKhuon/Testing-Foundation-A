@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a foundation course with user information">
+    <meta name="keyword" content="schedule of foundation student. user information">
+    <meta name="author" content="khuon chhoeurn">
+    <link rel="icon" type="image/x-icon" href="user.png">
+    <title>User Information</title>
+</head>
+<style>
+    form{
+        border: 1px solid;
+        padding: 10px;
+        width: 300px;
+        margin: 0rem auto;
+        height: 650px;
+    }
+    label, input, select, textarea {
+        margin-bottom: 15px;
+    }
+</style>
+<body>
+    
+    <form action="getData.php" method="post">
+        <p>User Information</p>
+        <label for="name">Name</label>
+        <input type="text" id="name"><br>
+        <label for="email">Email</label>
+        <input type="email" id="email"><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><br>
+        <label for="date">Date of birth</label>
+        <input type="date" id="date"><br>
+        <label for="appoi">Appointment</label>
+        <input type="datetime-local"><br>
+        <label for="file">File</label><input type="file" id="file"><br>
+        <label for="phone">Phone</label>
+        <input type="phone" id="phone">
+        <br>
+        <label for="range">range</label>
+        <input type="range" id="range">
+        <br>
+        <label for="">
+        <input type="radio">Male
+        </label>
+        <label for=""><input type="radio">Female</label>
+        <label for=""><input type="radio">Transgender</label>
+        <br><label for=""><input type="checkbox">Reading</label>
+        <label for=""><input type="checkbox">Writing</label>
+        <label for=""><input type="checkbox">Coding</label><br>
+        <label for="color">Color <input type="color" id="color"></label><br>
+        <label for="disk_c">Disk usage C:
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br><br>
+        <label for="disk_d">Disk usage D:</label>
+        <meter id="disk_d" value="0.6">60%</meter><br>
+        <br>
+        <select name="" id="">
+            <option value="Bmw" selected hidden>BMW</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Volvo">Toyota</option>
+        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Input Message"></textarea>
+    </form>
+</body>
+</html>

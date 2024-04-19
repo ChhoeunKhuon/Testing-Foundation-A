@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Positions</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        font-family: "Bungee Spice", sans-serif;
+        text-align: center;
+        background-color: black;
+        padding: 20px;
+        font-size: 20px;
+        position: sticky;
+        z-index: 1;
+    }
+    P:hover{
+        background-color: rgb(57, 56, 56);
+    }
+    body{
+        background-color: wheat;
+    }
+    section{
+        height: 100rem;
+        width: 1000px;
+        margin: 3rem auto;
+        background-color: rgb(243, 233, 214);
+        padding: 20px;
+        border: none;
+        border-radius: 20px;
+    }
+    img{
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0,0,0,0.25);
+    }
+    .first-img{
+        position: fixed;
+    }
+    .second-img{
+        position: sticky;
+        float: right;
+    }
+    .third-img{
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        
+    }
+</style>
+<body>
+    <header>
+        <p>This is nav bar</p>
+    </header>
+    <main>
+    <section>
+        <div class="first-img">
+            <img src="download.jpeg" alt="poster">
+        </div>
+        <div class="second-img">
+            <img src="images.jpeg" alt="poster">
+        </div>
+        <div class="third-img">
+            <div><img src="images.jpeg" alt="poster"></div>
+            <div><img src="images.jpeg" alt="poster"></div>
+            <div><img src="images.jpeg" alt="poster"></div>
+            <div><img src="images.jpeg" alt="poster"></div>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>Som tae 10 point ban hz chher</p>
+</footer>
+</body>
+</html>

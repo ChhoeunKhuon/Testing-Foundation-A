@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second grid</title>
+    <style>
+        :root{
+            --primary-color: white;
+        }
+        :root{
+            --best-color: pink;
+        }
+        section{
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 30px 30px 30px 30px;
+            width: 320px;
+            margin: 4rem auto;
+            background-color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+        }
+        section div{
+            background-color: red;
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+            font-size: 20px;
+        }
+        section div:first-child{
+            grid-row: 2 / 5;
+            grid-column: 1 / 3;
+        }
+        section div:nth-child(4), :nth-child(5), :nth-child(6), :nth-child(7){
+            grid-column: 3;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </section></body>
+</html>

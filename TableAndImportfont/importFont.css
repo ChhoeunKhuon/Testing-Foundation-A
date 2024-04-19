@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');
+main{
+    width: 700px;
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 3rem auto;
+    background: radial-gradient(50% 50%,green,yellow,white);
+}
+.logo{
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: blue;
+}
+span{
+    font-family: "Rakkas", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: blue;
+}
+.mid-text{
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.bottom-text{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button{
+    background-color: blue;
+    letter-spacing: 1px;
+    border: none;
+    padding: 5px;
+    border-radius: 6px;
+    color: white;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+button:hover{
+    background-color: rgb(85, 85, 249);
+}
+/* Table */
+table, th ,td{
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 1rem auto;
+}
+table th{
+  background-color: darkgreen;
+  color: white;
+}
+table tr:nth-child(odd){
+  background-color: rgb(205, 201, 201);
+}
